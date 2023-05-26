@@ -7,5 +7,5 @@ for i in range(1, 494):
     reqPattern = requests.get(urlPattern, allow_redirects=True) 
     reqPhoneWallpaper = requests.get(urlPhoneWallpaper, allow_redirects=True) 
     #In the future, hook it up to Bulbapedia and append the appropiate pokemon name.
-    open("Pattern_"+ str(i) +".png","wb").write(reqPattern.content)
+    open("Pattern_"+ str(i) +".png","wb").write(reqPattern.content) #wb for images, write binary
     open("PhoneWallpaper_"+str(i)+".png","wb").write(reqPhoneWallpaper.content)
